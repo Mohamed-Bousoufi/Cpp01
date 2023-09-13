@@ -1,6 +1,6 @@
 Name = Sed
 
-SRCS = main.cpp create_file.cpp replace.cpp
+SRCS = main.opp create_file.opp replace.opp
 HEADERS = Sed.hpp
 
 

@@ -14,13 +14,17 @@ int main(int argc, char **argv)
 				if (first_char == EOF)
 					throw("File is Empty");
 				std ::string line;
+				std :: string  all;
 				std ::ofstream outfile;
 				outfile.open(creat_file(argv[1]), std ::ios::out);
 				while (std ::getline(inputfile, line))
 				{
 					replace(&line, argv[2], argv[3]);
-					outfile << line << std ::endl;
+					all.append(line);
+					if(inputfile.peek() != EOF)
+						all.append("\n");
 				}
+				outfile << all;
 			}
 			else
 				throw("Can't Open File");
