@@ -1,4 +1,4 @@
-Name = Zombie
+Name = ZombieHorde
 
 SRCS = Zombie.cpp ZombieHorde.cpp main.cpp 
 
@@ -18,7 +18,7 @@ $(Name) : $(OBJS)
 
 
 %.o :%.cpp $(HEADERS)
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(FLAGS) -c $< 
 
 clean:
 	rm -f $(OBJS)
