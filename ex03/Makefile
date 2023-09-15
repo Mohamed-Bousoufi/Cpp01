@@ -4,7 +4,7 @@ SRCS = HumanA.cpp Weapon.cpp HumanB.cpp main.cpp
 HEADERS = HumanA.hpp Weapon.hpp HumanB.hpp
 
 
-FLAGS =  -Wall -Wextra -Werror
+FLAGS =  -Wall -Wextra -Werror -std=c++98
 
 all: $(Name)
 

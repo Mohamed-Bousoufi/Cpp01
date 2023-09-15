@@ -1,7 +1,7 @@
-Name = Sed
+Name = Harl
 
-SRCS = main.opp create_file.opp replace.opp
-HEADERS = Sed.hpp
+SRCS = main.cpp Harl.cpp 
+HEADERS = Harl.hpp
 
 
 FLAGS =  -Wall -Wextra -Werror -std=c++98

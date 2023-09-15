@@ -12,7 +12,12 @@ HumanB :: HumanB (std :: string name)
 
 void HumanB:: attack()
 {
-    std :: cout << this->name <<" attacks with their " << this->Weapon->getType()<< std :: endl;
+    if(this->Weapon)
+    {
+        std :: cout << this->name <<" attacks with their " << this->Weapon->getType() << std :: endl;
+    }
+    else
+        std :: cout << this->name <<" Has No Weapon "<< std :: endl;
 }
 HumanB :: ~HumanB ()
 {
@@ -20,7 +25,7 @@ HumanB :: ~HumanB ()
 }
 
 
-void HumanB :: setWeapon( class Weapon Weapon)
+void HumanB :: setWeapon( class Weapon &Weapon)
 {
     this->Weapon = &Weapon;
 }

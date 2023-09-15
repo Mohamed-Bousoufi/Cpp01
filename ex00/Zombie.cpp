@@ -2,40 +2,38 @@
 
 void Zombie :: announce (void)
 {
-    std :: cout << name << ": BraiiiiiiinnnzzzZ..." << std :: endl;
+    std :: cout << this->name << ": BraiiiiiiinnnzzzZ..." << std :: endl;
 }
 
 // Setter
 
 void Zombie :: Set_name(std :: string n)
 {
-    name = n;
+    this->name = n;
 }
 
 // Getter
 
 std :: string Zombie :: Get_name()
 {
-    return(name);
+    return(this->name);
 }
 
 // Constructors
 
 Zombie :: Zombie ()
 {
-    name = "Zombie";
-    announce();
+
 }
 
 Zombie :: Zombie(std :: string name)
 {
-    Zombie :: Set_name(name);
-    announce();
+    this->Set_name(name);
 }
 
 // Destructor
 
 Zombie :: ~Zombie()
 {
-    std :: cout << name << std :: endl;
+    
 }

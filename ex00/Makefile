@@ -4,7 +4,7 @@ SRCS = Zombie.cpp newZombie.cpp randomChump.cpp main.cpp
 
 HEADERS = Zombie.hpp
 
-FLAGS =  -Wall -Wextra -Werror
+FLAGS =  -Wall -Wextra -Werror -std=c++98
 
 all: $(Name)
 

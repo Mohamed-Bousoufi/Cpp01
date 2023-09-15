@@ -1,18 +1,16 @@
 #include "HumanA.hpp"
 
-HumanA :: HumanA(class Weapon &Weapon) : Weapon(Weapon)
+HumanA :: HumanA(Weapon &weapon) : weapon(weapon)
 {
-    this->Weapon = Weapon;
     std :: cout << "call HumanA Constructor";
 }
-HumanA :: HumanA(std :: string name,class Weapon &Weapon) : Weapon(Weapon)
+HumanA :: HumanA(std :: string name,class Weapon &weapon) : weapon(weapon)
 {
     this->name = name;
-    this->Weapon = Weapon;
 }
 void HumanA :: attack()
 {
-    std :: cout << this->name <<" attacks with their " << this->Weapon.getType()<< std :: endl;
+    std :: cout << this->name <<" attacks with their " << this->weapon.getType()<< std :: endl;
 }
 
 HumanA :: ~HumanA ()

@@ -16,7 +16,7 @@ void Zombie :: Set_name(std :: string name)
 
 Zombie :: Zombie ()
 {
-    std :: cout << "Constructor is called!" << std :: endl;
+   
 }
 
 Zombie :: Zombie(std :: string name)
