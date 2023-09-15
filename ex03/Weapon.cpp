@@ -17,7 +17,7 @@ Weapon :: ~Weapon()
 
 const std :: string& Weapon :: getType()
 {
-  if (this->type.c_str())
+    if (this->type.c_str())
     {
         std :: string &ref = this->type;
         return(ref);

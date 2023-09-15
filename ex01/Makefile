@@ -1,6 +1,6 @@
 Name = ZombieHorde
 
-SRCS = Zombie.cpp ZombieHorde.cpp main.cpp 
+SRCS = Zombie.cpp zombieHorde.cpp main.cpp 
 
 HEADERS = Zombie.hpp
 
