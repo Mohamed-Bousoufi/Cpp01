@@ -9,6 +9,7 @@ class Zombie
 
     public :
         Zombie();
+        
         Zombie(std :: string name);
         void announce(void );
         void Set_name(std :: string name);

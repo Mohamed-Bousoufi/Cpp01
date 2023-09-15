@@ -3,18 +3,27 @@ Name = Harl
 SRCS = main.cpp Harl.cpp 
 HEADERS = Harl.hpp
 
-
+CC = c++
 FLAGS =  -Wall -Wextra -Werror -std=c++98
+
+OBJS =$(SRCS:.cpp=.o)
 
 all: $(Name)
 
-$(Name): $(SRCS) $(HEADERS)
-	c++ $(FLAGS) $(SRCS) -o $(Name)
+
+
+$(Name) : $(OBJS)
+	$(CC) $(OBJS) -o $(Name)
+
+
+%.o :%.cpp $(HEADERS)
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm -f $(Name)
+	rm -f $(OBJS)
 
 fclean: clean
+	-rm -f $(Name)
 
 re: fclean all
 
