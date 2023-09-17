@@ -10,7 +10,6 @@ void Zombie :: announce (void)
 void Zombie :: Set_name(std :: string n)
 {
     this->name = n;
-
     
 }
 

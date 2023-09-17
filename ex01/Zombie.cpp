@@ -2,7 +2,7 @@
 
 void Zombie :: announce (void)
 {
-    std :: cout << this->name << std :: endl;
+    std :: cout << this->name << ": BraiiiiiiinnnzzzZ..." << std :: endl;
 }
 
 // Setter

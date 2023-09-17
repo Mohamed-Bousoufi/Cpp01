@@ -2,7 +2,7 @@
 
 HumanA :: HumanA(Weapon &weapon) : weapon(weapon)
 {
-    std :: cout << "call HumanA Constructor";
+    std :: cout << "call HumanA Constructor" << std :: endl;
 }
 HumanA :: HumanA(std :: string name,class Weapon &weapon) : weapon(weapon)
 {
