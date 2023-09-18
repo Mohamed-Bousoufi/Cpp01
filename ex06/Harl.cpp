@@ -34,7 +34,7 @@ void Harl :: error( void )
  {
 	int i = 0;
 	std :: string ptr[4] = {"DEBUG","INFO","WARNING","ERROR"};
-	while(ptr[i].c_str())
+	while(  i < 4 &&ptr[i].c_str())
 	{
 		if(level == ptr[i])
 			break;
